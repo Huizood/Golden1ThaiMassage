@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Logo from './Xia_Logo.jpg';
@@ -28,6 +28,14 @@ function App() {
   const goToNextSlide = () => {
     setActiveSlide(activeSlide === images.length - 1 ? 0 : activeSlide + 1);
   };
+
+  useEffect(() => {
+    // Automatically go to the next slide every 3 seconds
+    const interval = setInterval(goToNextSlide, 3000);
+    // Clear the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, [activeSlide]); // Re-run effect when activeSlide changes
+  
 
   return (
     <div className="App">
