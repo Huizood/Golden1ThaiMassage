@@ -2,7 +2,7 @@ import React from 'react';
 import './Service.css';
 import Menu from './component/Menu';
 
-// Define menu items
+// Define the menuItem with the Title/Description/Price
 const menuItems = [
   {
     id: 1,
@@ -80,6 +80,7 @@ function Service() {
   return (
     <div className="service-container">
       <h2 className="section-title">Our Services</h2>
+      {/* Below is the Menu.js where in the component folder such as will apply the title/description/price at the Menu.js file */}
       <Menu items={menuItems} />
     </div>
   );
