@@ -1,102 +1,107 @@
+import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Logo from './Xia_Logo.jpg';
+import img1 from './img1_massage.jpg';
+import img2 from './img2_massage.jpg';
+import img3 from './image3_massage.jpg';
+import Service from './Service';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
+  const [activeTab, setActiveTab] = useState('t_Home');
 
+  //Active the openTab
+  const openTab = (evt, tabName) => {
+    setActiveTab(tabName);
+  };
+ 
+  const [activeSlide, setActiveSlide] = useState(0);
+  const images = [img1, img2, img3]; // Assuming img1, img2, img3 are imported images
 
-  // Function to open the selected tab
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
+  const goToPreviousSlide = () => {
+    setActiveSlide(activeSlide === 0 ? images.length - 1 : activeSlide - 1);
+  };
 
-  // Hide all tab content
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-  }
-
-  // Deactivate all tab links
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the selected tab content and mark the button as active
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-
-  // Load content from external JavaScript file
-  if (tabName === 't_Home') {
-      loadTabContent('App.js');
-  } else if (tabName === 't_Service') {
-      loadTabContent('Service.js');
-  }
-}
-
-function loadTabContent(fileName) {
-  var script = document.createElement('script');
-  script.src = fileName;
-  document.head.appendChild(script);
-}
-
-
-
-
+  const goToNextSlide = () => {
+    setActiveSlide(activeSlide === images.length - 1 ? 0 : activeSlide + 1);
+  };
 
   return (
     <div className="App">
-
-
-      {/* This container will be the logo+contact+location */}
-      <div className ="container_Home_Info">
-    
-
-     {/* The Logo of the store */}
-      <div className = "row">
-      <div className = "col-s">
-        <img className="Xia_Logo" src={Logo} style={{ width: '50px', height: '50px' }} alt="logo" />
+      <div className="container_Home_Info">
+        <div className="row">
+          <div className="col-s">
+            <img className="Xia_Logo" src={Logo} style={{ width: '50px', height: '50px' }} alt="logo" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-s">
+            <h1>Xia's Massage</h1>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-s">
+            <h6>281-302-5114</h6>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-s">
+            <p>1914 Wescott Ave suit 130, Sugar Land, TX 77479</p>
+          </div>
         </div>
       </div>
 
-      {/* This will be the name of the store */}
-      <div className = "row">
-      <div className = "col-s">
-         <h1>Xia's Massage</h1>
+      <div className="col-m">
+        <div className="tab">
+          <button className={`tablinks ${activeTab === 't_Home' ? 'active' : ''}`} onClick={(event) => openTab(event, 't_Home')}>Home</button>
+          <button className={`tablinks ${activeTab === 't_Service' ? 'active' : ''}`} onClick={(event) => openTab(event, 't_Service')}>Service</button>
+          <button className={`tablinks ${activeTab === 't_book' ? 'active' : ''}`} onClick={(event) => openTab(event, 't_book')}>Book Online</button>
+          <button className={`tablinks ${activeTab === 't_contact' ? 'active' : ''}`} onClick={(event) => openTab(event, 't_contact')}>Contact Us</button>
         </div>
       </div>
 
-      {/* The contact/phone number */}
-      <div className = "row">
-      <div className = "col-s">
-        <h6> 281-302-5114</h6>
-        </div>
+      <div id="t_Home" className="tabcontent" style={{ display: activeTab === 't_Home' ? 'block' : 'none' }}>
+        <h2>Home Page</h2>
+        <p>Welcome to Xia's Massage Home Page.</p>
+        <div id="carouselExampleControls1" className="carousel slide" data-ride="carousel">
+        <div className="carousel-inner">
+        {images.map((image, index) => (
+          <div className={`carousel-item ${index === activeSlide ? 'active' : ''}`} key={index}>
+            <img className="d-block w-100" src={image} alt={`Slide ${index}`} />
+          </div>
+        ))}
       </div>
-
-
-       {/* The Address*/}
-       <div className = "row">
-      <div className = "col-s">
-        <p>1914 Wescott Ave suit 130, Sugar Land, TX 77479</p>
-        </div>
-      </div>
-      </div>
-
-      {/* Below is tab to other pages */}
-      <div classNAme = "container_tab">
-      <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 't_Home')">Home</button>
-        <button class="tablinks" onclick="openTab(event, 't_Service')">Service</button>
-        <button class="tablinks" onclick="openTab(event, 't_book')">Book Online</button>
-        <button class="tablinks" onclick="openTab(event, 't_contact')">Contact Us</button>
-
+      <a className="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev" onClick={goToPreviousSlide}>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
+      </a>
+      <a className="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next" onClick={goToNextSlide}>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="sr-only">Next</span>
+      </a>
     </div>
-    </div>
-
-    <div id="t_Home" class="tabcontent"></div>
-    <div id="t_Service" class="tabcontent"></div>
-
-
-   
+      </div>
+      <div id="t_Service" className="tabcontent" style={{ display: activeTab === 't_Service' ? 'block' : 'none' }}>
+        <Service />
+      </div>
+      <div id="t_book" className="tabcontent" style={{ display: activeTab === 't_book' ? 'block' : 'none' }}>
+        <h2>Book Online</h2>
+        <p>Here you can book your appointment online.</p>
+      </div>
+      <div id="t_contact" className="tabcontent" style={{ display: activeTab === 't_contact' ? 'block' : 'none' }}>
+        <h2>Contact Us</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.5975541976813!2d-95.64857542436097!3d29.586310740131516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e169dbe097b3%3A0x7f41080021e7a752!2sXia&#39;s%20Massage!5e0!3m2!1sen!2sus!4v1716662551352!5m2!1sen!2sus"
+          width="100%"
+          height="450"
+          frameBorder="0"
+          allowFullScreen
+          style={{ border: 0 }} // Use an object for inline styles
+        ></iframe>
+        <p>Contact us at 281-302-5114 or visit us at 1914 Wescott Ave suit 130, Sugar Land, TX 77479.</p>
+      </div>
     </div>
   );
 }

@@ -1,18 +1,79 @@
-.container_Home_Info{
-  background-color:	rgb(139,69,19)
+/* App.css */
+
+/* Default styles */
+.container_Home_Info {
+  background-color: rgb(139, 69, 19);
+  padding: 5vw; /* Adjust as needed */
+  margin-bottom: 5vw; /* Adjust as needed */
+  text-align: center;
+  margin: 0 auto; /* Center the container */
 }
-.col-s{
+
+.col-s {
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container_tab{
-  display:flex;
-  justify-content: center;
-}
-.tab{
+
+
+
+.tab {
   display: flex;
   justify-content: center; /* Align tabs horizontally at the center */
-  margin-bottom: 20px;
+  background-color: #f1f1f1;
+ /* padding: 3vw;  Adjust as needed */
+ /* border-radius: 1vw; /* Adjust as needed */
+  /*margin-bottom: 5vw;  Adjust as needed */
+}
+
+.tablinks {
+  background-color: #ffffff;
+  color: #000;
+  padding: 1vw 2vw; /* Adjust padding to make buttons smaller */
+  margin: 0.5vw; /* Adjust margin to control spacing between buttons */
+  border: 0.1vw solid #ccc; /* Adjust border as needed */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  font-family: Arial, sans-serif;
+  box-shadow: 0.3vw 0.3vw 0.8vw rgba(0, 0, 0, 0.1); /* Adjust box-shadow as needed */
+}
+
+.tablinks:hover {
+  background-color: #ddd;
+  box-shadow: 0.3vw 0.6vw 1.5vw rgba(0, 0, 0, 0.2); /* Adjust as needed */
+}
+
+.tablinks.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 0.1vw solid #4CAF50; /* Adjust as needed */
+}
+
+.tabcontent {
+  display: none;
+  padding: 5vw; /* Adjust as needed */
+  border: 0.1vw solid #ccc; /* Adjust as needed */
+  border-radius: 1vw; /* Adjust as needed */
+  max-width: 80vw; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+.tabcontent h2 {
+  margin-top: 0;
+}
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .container_Home_Info,
+  .tabcontent {
+    max-width: 90vw; /* Adjust as needed */
+  }
+
+  .tablinks {
+    padding: 0.6rem 1rem; /* Adjust padding for smaller screens */
+    margin: 0.3rem; /* Adjust margin for smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
 }
