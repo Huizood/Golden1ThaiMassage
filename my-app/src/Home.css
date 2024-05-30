@@ -1,0 +1,54 @@
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Limit the size of the carousel images */
+.carousel-inner .carousel-item img {
+    max-width: 100%; /* Ensure the image does not exceed the width of the container */
+  
+    object-fit: cover; /* Maintain the aspect ratio while covering the container */
+    margin: 0 auto; /* Center the image horizontally */
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    /* Adjust as needed */
+    width: 100%;
+    border-bottom: 1px dashed #000;
+    /* Adjust dashed line color and style */
+}
+
+/* Optionally, add padding to the carousel items to create space around the images */
+.carousel-inner .carousel-item {
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This sets the height of the container to 100% of the viewport height */
+}
+
+.service {
+    text-align: center; /* Center the text horizontally */
+}
+.table {
+    border-collapse: collapse;
+    border: none;
+}
+
+.table th,
+.table td {
+    border: none;
+}
+
+
+

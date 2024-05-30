@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Logo from './Xia_Logo.jpg';
-import img1 from './img1_massage.jpg';
-import img2 from './img2_massage.jpg';
-import img3 from './image3_massage.jpg';
 import Service from './Service';
+import Home from './Home';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -16,27 +14,6 @@ function App() {
   const openTab = (evt, tabName) => {
     setActiveTab(tabName);
   };
-
-  //The slide show of the picture for the home page
-  const [activeSlide, setActiveSlide] = useState(0);
-  const images = [img1, img2, img3]; // Assuming img1, img2, img3 are imported images
-
-  const goToPreviousSlide = () => {
-    setActiveSlide(activeSlide === 0 ? images.length - 1 : activeSlide - 1);
-  };
-
-  const goToNextSlide = () => {
-    setActiveSlide(activeSlide === images.length - 1 ? 0 : activeSlide + 1);
-  };
-
-  useEffect(() => {
-    // Automatically go to the next slide every 3 seconds
-    const interval = setInterval(goToNextSlide, 3000);
-    // Clear the interval when the component unmounts
-    return () => clearInterval(interval);
-  }, [activeSlide]); // Re-run effect when activeSlide changes
-  
-
   return (
     <div className="App">
 
@@ -76,36 +53,8 @@ function App() {
       </div>
 
       <div id="t_Home" className="tabcontent" style={{ display: activeTab === 't_Home' ? 'block' : 'none' }}>
-        {/* This will be how home page looks like */}
-        {/* Perphas make a individual js file later */}
-        <h2>Home Page</h2>
-        <p>Welcome to Xia's Massage Home Page.</p>
-
-       {/* This is where doing the slide of images */}
-        <div id="carouselExampleControls1" className="carousel slide" data-ride="carousel">
-          <div className="carousel-inner">
-            {/* Maps the index with images */}
-            {images.map((image, index) => (
-              <div className={`carousel-item ${index === activeSlide ? 'active' : ''}`} key={index}>
-                <img className="d-block w-100" src={image} alt={`Slide ${index}`} />
-              </div>
-            ))}
-            <a className="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev" onClick={goToPreviousSlide}>
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next" onClick={goToNextSlide}>
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              {/* The user click Next then go to the next images  */}
-              <span className="sr-only">Next</span>
-            </a>
-          </div>
-
-        </div>
-
-
-
-
+        {/* Directed to the Home Page */}
+        <Home />
       </div>
       <div id="t_Service" className="tabcontent" style={{ display: activeTab === 't_Service' ? 'block' : 'none' }}>
         {/* This direct the user to the Service.js */}
