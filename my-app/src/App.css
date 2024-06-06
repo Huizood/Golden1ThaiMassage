@@ -1,16 +1,18 @@
 /* App.css */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 /* Default styles */
 .container_Home_Info {
-  background-color: rgb(139, 69, 19);
+  background-image: url('./background.jpg');
   padding: 5vw; /* Adjust as needed */
-  margin-bottom: 5vw; /* Adjust as needed */
+  /* margin-bottom: 5vw; Adjust as needed */
+  margin-bottom:5vw;
   text-align: center;
+  font-family: 'Corben', Georgia, Times, serif;
   margin: 0 auto; /* Center the container */
 }
 
 .col-s {
-  color: white;
+  /* color: white; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,13 +23,14 @@
 .tab {
   display: flex;
   justify-content: center; /* Align tabs horizontally at the center */
-  background-color: #f1f1f1;
+  background-image: url('./background.jpg');
  /* padding: 3vw;  Adjust as needed */
  /* border-radius: 1vw; /* Adjust as needed */
   /*margin-bottom: 5vw;  Adjust as needed */
 }
 
 .tablinks {
+  font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
   color: #000;
   padding: 1vw 2vw; /* Adjust padding to make buttons smaller */
@@ -35,7 +38,6 @@
   border: 0.1vw solid #ccc; /* Adjust border as needed */
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-  font-family: Arial, sans-serif;
   box-shadow: 0.3vw 0.3vw 0.8vw rgba(0, 0, 0, 0.1); /* Adjust box-shadow as needed */
 }
 
@@ -51,6 +53,7 @@
 }
 
 .tabcontent {
+  font-family: 'Montserrat', sans-serif;
   display: none;
   padding: 5vw; /* Adjust as needed */
   border: 0.1vw solid #ccc; /* Adjust as needed */
@@ -62,6 +65,8 @@
 .tabcontent h2 {
   margin-top: 0;
 }
+
+
 
 /* Media query for screens smaller than 768px (e.g., mobile devices) */
 /* This is where it will looks the same on the mobile page. */

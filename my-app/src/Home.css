@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 .carousel-control-prev,
 .carousel-control-next {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
@@ -5,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 /* Limit the size of the carousel images */
 .carousel-inner .carousel-item img {
@@ -12,6 +15,9 @@
   
     object-fit: cover; /* Maintain the aspect ratio while covering the container */
     margin: 0 auto; /* Center the image horizontally */
+}
+.section-title{
+    font-family: 'Montserrat', sans-serif;
 }
 .section-title::after {
     content: '';
@@ -31,6 +37,7 @@
 
 .centered-container {
     display: flex;
+    font-family: 'Montserrat', sans-serif;
     flex-direction: column; /* Stack children vertically */
     justify-content: center;
     align-items: center;
@@ -39,8 +46,10 @@
 
 .service {
     text-align: center; /* Center the text horizontally */
+    font-family: 'Montserrat', sans-serif;
 }
 .table {
+    font-family: 'Montserrat', sans-serif;
     border-collapse: collapse;
     border: none;
 }
@@ -48,6 +57,14 @@
 .table th,
 .table td {
     border: none;
+}
+.review-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 

@@ -60,119 +60,128 @@ function Home() {
 
             {/* Explain the service */}
             <div className="row align-items-center">
+                <h2 className="service">Our Service</h2>
                 <div className="col">
-                    <h2 className="service">Our Service</h2>
                     <p>Thai Massage</p>
-                    <p> SOmething </p>
-                </div>
-
-                <div className = "col">
 
                 </div>
 
-                <div className = "col">
+                <div className="col">
+                    <p>Prenatal Massage</p>
 
                 </div>
 
-            
+                <div className="col">
+                    <p>Hotstone Massage</p>
+
+                </div>
+
+
             </div>
 
 
             {/* The locations and Hours */}
             <div className="row">
-                    <div className="col">
-                        <div className="row">
-                            <h2>Locations & Hours</h2>
+                <div className="col">
+                    <div className="row">
+                        <h2>Locations & Hours</h2>
+                    </div>
+                    <div className="row">
+                        <div className="col">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.5975541976813!2d-95.64857542436097!3d29.586310740131516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e169dbe097b3%3A0x7f41080021e7a752!2sXia&#39;s%20Massage!5e0!3m2!1sen!2sus!4v1716662551352!5m2!1sen!2sus"
+                                width="100%"
+                                height="300"
+                                frameBorder="0"
+                                allowFullScreen
+                                style={{ border: 0 }} // Use an object for inline styles
+                            ></iframe>
+
+                            <p>1914 Wescott Ave suit 130, Sugar Land, TX 77479<br />Contact: 281-302-5114</p>
                         </div>
-                        <div className="row">
-                            <div className="col">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.5975541976813!2d-95.64857542436097!3d29.586310740131516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e169dbe097b3%3A0x7f41080021e7a752!2sXia&#39;s%20Massage!5e0!3m2!1sen!2sus!4v1716662551352!5m2!1sen!2sus"
-                                    width="100%"
-                                    height="300"
-                                    frameBorder="0"
-                                    allowFullScreen
-                                    style={{ border: 0 }} // Use an object for inline styles
-                                ></iframe>
-
-                                <p>1914 Wescott Ave suit 130, Sugar Land, TX 77479<br />Contact: 281-302-5114</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    {/* The table align to the center and output the open day and hours */}
-                    <div className="col d-flex justify-content-center">
-
-                        <table className="table">
-                            <thead>
-                                <tr>
-                                    <th>Day</th>
-                                    <th>Opening Time</th>
-                                    <th>Closing Time</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Monday</td>
-                                    <td>9:00 AM</td>
-                                    <td>10:00 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Tuesday</td>
-                                    <td>9:00 AM</td>
-                                    <td>10:00 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Wednesday</td>
-                                    <td>9:00 AM</td>
-                                    <td>10:00 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Thursday</td>
-                                    <td>9:00 AM</td>
-                                    <td>10:00 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Friday</td>
-                                    <td>9:00 AM</td>
-                                    <td>10:00 PM</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-
-            
-            
-            {/* This section is where the user click the button and able to see the user review */}
-            <div className="row">
-                    <div className="col d-flex justify-content-center">
-                        <img src={google} alt="Google icon" style={{ marginRight: '5px', maxWidth: '100%', maxHeight: '260px' }} />
-                    </div>
-                    <div className="col" style={{ margin: '20px 0' }}>
-                        <h2 className="Reviews"> Google Reviews</h2>
-                        <a href="#" onClick={handleGoogleReviewClick} target="_blank" rel="noopener noreferrer">
-                            <span> Reviews</span>
-                        </a>
-
 
                     </div>
                 </div>
+                {/* The table align to the center and output the open day and hours */}
+                <div className="col d-flex justify-content-center">
 
-            {/* This section is where user click the Yelp button and able to comment on Yelp */}
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Opening Time</th>
+                                <th>Closing Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9:00 AM</td>
+                                <td>10:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9:00 AM</td>
+                                <td>10:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9:00 AM</td>
+                                <td>10:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9:00 AM</td>
+                                <td>10:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9:00 AM</td>
+                                <td>10:00 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+            <div className="review-section">
+                {/* This section is where the user clicks the button and is able to see the user review */}
                 <div className="row">
                     <div className="col d-flex justify-content-center">
-                        <img src={yelp} alt="Google icon" style={{ marginRight: '5px', maxWidth: '100%', maxHeight: '260px' }} />
+                        <img src={google} alt="Google icon" className="review-icon" />
                     </div>
-                    <div className="col" style={{ margin: '20px 0' }}>
-                        <h2 className="Reviews"> Yelp Reviews</h2>
-                        <a href="#" onClick={handleYelpReviewClick} target="_blank" rel="noopener noreferrer">
-                            <span> Reviews</span>
+                    <div className="col review-content">
+                        <h2 className="Reviews"> Google Reviews</h2>
+                        <a href="#" onClick={handleGoogleReviewClick} target="_blank" rel="noopener noreferrer">
+                            <button className="review-button">
+                                Reviews
+                            </button>
                         </a>
-
                     </div>
                 </div>
+            </div>
+
+            <div className="review-section">
+                {/* This section is where the user clicks the Yelp button and is able to comment on Yelp */}
+                <div className="row">
+                    <div className="col d-flex justify-content-center">
+                        <img src={yelp} alt="Yelp icon" className="review-icon" />
+                    </div>
+                    <div className="col review-content">
+                        <h2 className="Reviews"> Yelp Reviews</h2>
+                        <a href="#" onClick={handleYelpReviewClick} target="_blank" rel="noopener noreferrer">
+                            <button className="review-button">
+                                Reviews
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
 
 
 
