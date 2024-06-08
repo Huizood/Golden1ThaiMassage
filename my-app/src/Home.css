@@ -66,6 +66,19 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.massage-pic {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px; /* Adjust the value to control the roundness */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.text{
+    text-align: center; /* Center the text horizontally */
+    font-family: 'Montserrat', sans-serif;
+}
 
+  
 
 

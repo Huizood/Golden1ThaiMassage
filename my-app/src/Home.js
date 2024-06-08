@@ -7,6 +7,9 @@ import google from './google_2.jpg';
 import yelp from './yelp.jpg';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import aroma from './aromatherapy_massage.jpg';
+import hot from './hostone_massage.jpg';
+import thai from './thai_massage.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
@@ -62,17 +65,20 @@ function Home() {
             <div className="row align-items-center">
                 <h2 className="service">Our Service</h2>
                 <div className="col">
-                    <p>Thai Massage</p>
+                <img src={thai} alt="Thai massage pic" class="massage-pic" />
+                    <p className = "text">Thai Massage</p>
 
                 </div>
 
                 <div className="col">
-                    <p>Prenatal Massage</p>
+                <img src={aroma} alt="Aroma Therapy pic" class="massage-pic" />
+                    <p className = "text">Aromatherapy Massage</p>
 
                 </div>
 
                 <div className="col">
-                    <p>Hotstone Massage</p>
+                <img src = {hot} alt = "Hotstone massage pic" class = "massage-pic" />
+                    <p className = "text">Hotstone Massage</p>
 
                 </div>
 
