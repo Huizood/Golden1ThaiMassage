@@ -26,17 +26,17 @@ function App() {
         </div>
         <div className="row">
           <div className="col-s">
-            <h1>Xia's Massage</h1>
+            <h1>Golden 1 Thai Massage</h1>
           </div>
         </div>
         <div className="row">
           <div className="col-s">
-            <h6>281-302-5114</h6>
+            <h6>###-###-#####</h6>
           </div>
         </div>
         <div className="row">
           <div className="col-s">
-            <p>1914 Wescott Ave suit 130, Sugar Land, TX 77479</p>
+            <p>1834 Wirt Road, Houston , Texas 77055</p>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@ function App() {
         <h2>Contact Us</h2>
         {/* Below code will output the direction of the google map to the store */}
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.5975541976813!2d-95.64857542436097!3d29.586310740131516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e169dbe097b3%3A0x7f41080021e7a752!2sXia&#39;s%20Massage!5e0!3m2!1sen!2sus!4v1716662551352!5m2!1sen!2sus"
+          src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.075486732359!2d-95.48690422423881!3d29.804363475045328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c42f6f5eb1c5%3A0xdc618075b222bb4f!2s1834%20Wirt%20Rd%2C%20Houston%2C%20TX%2077055!5e0!3m2!1sen!2sus!4v1746315219883!5m2!1sen!2sus"
           width="100%"
           height="450"
           frameBorder="0"
@@ -78,7 +78,7 @@ function App() {
           style={{ border: 0 }} // Use an object for inline styles
         ></iframe>
         {/* The Contact Information */}
-        <p>Contact us at 281-302-5114 or visit us at 1914 Wescott Ave suit 130, Sugar Land, TX 77479.</p>
+        <p>Contact us at 281-302-5114 or visit us at 1834 Wirt Rd, Houston, TX 77055.</p>
       </div>
     </div>
   );

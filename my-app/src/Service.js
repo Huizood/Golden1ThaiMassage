@@ -1,78 +1,106 @@
 import React from 'react';
 import './Service.css';
 import Menu from './component/Menu';
-
+import trad_pic from './traditional_thai.jpg';
+import thai_comb from './thai_combo.jpg';
+import swedish from './swedish_m.jpg';
+import couple from './couple.jpg';
+import deep from './deep.jpg';
+import foot from './foot.jpg';
+import pre from './pre.jpg';
+import scrub from './scrub.jpg';
 // Define the menuItem with the Title/Description/Price
 const menuItems = [
   {
     id: 1,
-    title: 'Traditional Thai',
+    title: 'Traditional Thai Massage',
     description: 'It uses pulling up and stretching techniques to help relieve tension and muscle soreness',
-    price: [80,120,160],
-    time: [60,90,120],
+    image: trad_pic,
+    time: [30,45,60,90,120],
+    price: [50,65,80,120,160],
   },
   {
     id: 2,
-    title: 'Thai Combination',
+    title: 'Thai Combination Massage',
     description: 'It uses pulling up and stretching techniques to help relieve tension and muscle soreness',
-    price: [80,120,160],
-    time: [60,90,120],
+    image: thai_comb,
+    time: [30,45,60, 90, 120],
+    price: [50,65,80,120, 160],
   },
   {
     id: 3,
     title: 'Specific Area Massage',
     description: 'It uses pulling up and stretching techniques to help relieve tension and muscle soreness',
-    price: [60],
+    image: thai_comb,
     time: [30],
+    price: [60],
   },
   {
     id: 4,
     title: 'Swedish Massage',
     description: 'It involves long, kneading strokes combined with rhythmic tapping strokes and movement of the joints.',
-    price: [80,120,160],
-    time: [60,90,120],
+    image: swedish,
+    time: [30,45,60, 90, 120],
+    price: [55,65,80,120, 160],
   },
   {
     id: 5,
     title: 'Deep Tissue Massage',
     description: 'Deep Tissue massage therapy is similar to Swedish massage therapy in that it focuses on the deepest layers of muscle tissue, tendons, and fascia.',
-    price: [80,120,160],
-    time: [60,90,120],
+    image: deep,
+    time: [30,45,60, 90, 120],
+    price: [55,65,80,120, 160],
   },
   {
     id: 6,
     title: 'Prenatal Massage',
     description: 'It aims to relax tense muscles, relieve aches and pains, improve circulation and mobility, and simply make you feel better',
-    price: [80,120],
+    image: pre,
     time: [60,90],
+    price: [90,130],
+   
   },
   {
     id: 7,
     title: 'Cupping Therapy',
     description: 'It aids in the treatment of pain, inflammation. Blood flow, relaxation, and well-being. As well as serving as a type of deep-tissue massage.',
-    price: [60],
-    time: [],
+    image: thai_comb,
+    price: [30],
   },
   {
     id: 8,
-    title: 'Thai Herbal Ball Massage',
-    description: 'The massage uses a selection of therapeutic herbs, such as ginger, turmeric, and lemongrass - which are wrapped in a muslin cloth and tied into a ball.',
-    price: [100,150,200],
-    time: [60,90,120],
+    title: 'Foot Massage',
+    description: 'Experience targeted foot massage techniques to promote relaxation and stimulate healing throughout the body',
+    image: foot,
+    time: [30,45,60, 90, 120],
+    price: [55,65,80,120, 160],
   },
   {
     id: 9,
     title: 'Aromatherapy Massage',
     description: 'Type of Swedish massage that uses essential oils. Its main focus is relaxation and mindfulness',
-    price: [100,150,200],
+    image: thai_comb,
     time: [60, 90,120],
+    price: [100,150,200],
+   
   },
   {
     id: 10,
-    title: 'Lymphatic Drainage Massage',
-    description: 'Gentle massage that helps move lymph fluids around the body and drain lymph nodes. It can relieve lymphedema.',
-    price: [100,150,200],
-    time: [60,90,120],
+    title: 'Body Scrub with Body Massage',
+    description: 'Reveal silky-smooth skin with our exfoliating treatment, leaving you radiant and refreshed',
+    image: scrub,
+    time: [60,90],
+    price: [100,130],
+    
+  },
+  {
+    id: 11,
+    title: 'Couple Massage',
+    description: 'Share a serene experience together, enjoying simultaneous massages in our tranquil setting.',
+    image: couple,
+    time: [60,90],
+    price: [140,220],
+   
   },
 ];
 

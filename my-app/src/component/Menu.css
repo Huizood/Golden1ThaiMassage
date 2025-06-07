@@ -1,0 +1,49 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; /* Spacing between cards */
+  justify-content: center;
+  padding: 20px;
+}
+
+.menu-item {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align all text to the left */
+  padding: 20px;
+}
+
+.menu-item-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu-item-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align time/price rows to the left */
+  margin-top: 10px;
+  padding-left: 4px;
+}
+
+.price-row {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.price {
+  font-weight: 500;
+}
+
+  

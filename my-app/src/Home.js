@@ -95,7 +95,7 @@ function Home() {
                     <div className="row">
                         <div className="col">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.5975541976813!2d-95.64857542436097!3d29.586310740131516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e169dbe097b3%3A0x7f41080021e7a752!2sXia&#39;s%20Massage!5e0!3m2!1sen!2sus!4v1716662551352!5m2!1sen!2sus"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.075486732359!2d-95.48690422423881!3d29.804363475045328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c42f6f5eb1c5%3A0xdc618075b222bb4f!2s1834%20Wirt%20Rd%2C%20Houston%2C%20TX%2077055!5e0!3m2!1sen!2sus!4v1746315219883!5m2!1sen!2sus"
                                 width="100%"
                                 height="300"
                                 frameBorder="0"
@@ -103,7 +103,7 @@ function Home() {
                                 style={{ border: 0 }} // Use an object for inline styles
                             ></iframe>
 
-                            <p>1914 Wescott Ave suit 130, Sugar Land, TX 77479<br />Contact: 281-302-5114</p>
+                            <p>1834 Wirt Rd, Houston, TX 77055<br />Contact: 281-302-5114</p>
                         </div>
 
                     </div>
