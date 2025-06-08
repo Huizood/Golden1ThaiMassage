@@ -68,14 +68,6 @@ const menuItems = [
     price: [30],
   },
   {
-    id: 8,
-    title: 'Foot Massage',
-    description: 'Experience targeted foot massage techniques to promote relaxation and stimulate healing throughout the body',
-    image: foot,
-    time: [30,45,60, 90, 120],
-    price: [55,65,80,120, 160],
-  },
-  {
     id: 9,
     title: 'Aromatherapy Massage',
     description: 'Type of Swedish massage that uses essential oils. Its main focus is relaxation and mindfulness',

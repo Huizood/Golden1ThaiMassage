@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import Logo from './Xia_Logo.jpg';
+import Logo from './name.jpg';
 import Service from './Service';
 import Home from './Home';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -21,7 +21,7 @@ function App() {
       <div className="container_Home_Info">
         <div className="row">
           <div className="col-s">
-            <img className="Xia_Logo" src={Logo} style={{ width: '50px', height: '50px' }} alt="logo" />
+            <img className="Xia_Logo" src={Logo} style={{ width: '100px', height: '100px' }} alt="logo" />
           </div>
         </div>
         <div className="row">
@@ -31,7 +31,7 @@ function App() {
         </div>
         <div className="row">
           <div className="col-s">
-            <h6>###-###-#####</h6>
+            <h6>832-374-3319</h6>
           </div>
         </div>
         <div className="row">
@@ -60,11 +60,62 @@ function App() {
         {/* This direct the user to the Service.js */}
         <Service />
       </div>
-      <div id="t_book" className="tabcontent" style={{ display: activeTab === 't_book' ? 'block' : 'none' }}>
-      {/* This is the booking page, NEED TO do it in individual js file */}
-        <h2>Book Online</h2>
-        <p>Here you can book your appointment online.</p>
-      </div>
+      <div
+      id="t_book"
+      className="tabcontent"
+      style={{ display: activeTab === 't_book' ? 'block' : 'none' }}
+    >
+      <h2 className="booking-title">Book an Appointment</h2>
+      <p className="booking-subtitle">Fill out the form below to request your appointment.</p>
+      
+      <form
+        action="https://formsubmit.co/yanchenf9@gmail.com"
+        method="POST"
+        className="booking-form"
+      >
+        <input type="hidden" name="_captcha" value="false" />
+
+        <div className="form-group">
+          <label>Your Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Your Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Preferred Appointment Time</label>
+          <input
+            type="datetime-local"
+            name="time"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Appointment Message</label>
+          <textarea
+            name="message"
+            placeholder="Describe your needs or preferred therapist, duration, etc."
+            rows="4"
+          ></textarea>
+        </div>
+
+        <button type="submit" className="submit-button">Book Appointment</button>
+      </form>
+    </div>
       <div id="t_contact" className="tabcontent" style={{ display: activeTab === 't_contact' ? 'block' : 'none' }}>
         {/* This is the Contact Page, this page is done */}
         <h2>Contact Us</h2>
@@ -78,7 +129,7 @@ function App() {
           style={{ border: 0 }} // Use an object for inline styles
         ></iframe>
         {/* The Contact Information */}
-        <p>Contact us at 281-302-5114 or visit us at 1834 Wirt Rd, Houston, TX 77055.</p>
+        <p>Contact us at 832-374-3319 or visit us at 1834 Wirt Rd, Houston, TX 77055.</p>
       </div>
     </div>
   );

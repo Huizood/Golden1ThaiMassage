@@ -31,12 +31,12 @@ function Home() {
     }, [activeSlide]);
 
     const handleGoogleReviewClick = () => {
-        const googleReviewURL = "https://www.google.com/search?q=xia%27s+massage&oq=xia%27s+massage&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyEAgBEC4YrwEYxwEYgAQYjgUyBggCEEUYQDIGCAMQRRg7MgcIBBAAGIAEMggIBRAAGBYYHjIGCAYQRRg8MgYIBxBFGDzSAQgyMjU3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x8640e169dbe097b3:0x7f41080021e7a752,1,,,,";
+        const googleReviewURL = "https://www.google.com/search?q=golden+1+thai+massgae&oq=golden+&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgoIARAuGLEDGIAEMhAIAhAuGMcBGLEDGNEDGIAEMgYIAxBFGDkyDQgEEAAYgwEYsQMYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg0NjE1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x8640c567e280bb99:0x71d92342b39858e1,1,,,,";
         window.open(googleReviewURL, '_blank');
     };
 
     const handleYelpReviewClick = () => {
-        const yelpReviewURL = "https://www.yelp.com/writeareview/biz/EydqqeA0Ics9zP8p7tjIug?return_url=%2Fbiz%2FEydqqeA0Ics9zP8p7tjIug&review_origin=biz-details-war-button";
+        const yelpReviewURL = "https://www.google.com/search?q=golden+1+thai+massgae&oq=golden+&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgoIARAuGLEDGIAEMhAIAhAuGMcBGLEDGNEDGIAEMgYIAxBFGDkyDQgEEAAYgwEYsQMYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg0NjE1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x8640c567e280bb99:0x71d92342b39858e1,1,,,,";
         window.open(yelpReviewURL, '_blank');
     }
 
@@ -103,7 +103,7 @@ function Home() {
                                 style={{ border: 0 }} // Use an object for inline styles
                             ></iframe>
 
-                            <p>1834 Wirt Rd, Houston, TX 77055<br />Contact: 281-302-5114</p>
+                            <p>1834 Wirt Rd, Houston, TX 77055<br />Contact: 832-374-3319</p>
                         </div>
 
                     </div>
