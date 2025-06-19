@@ -36,7 +36,7 @@ function Home() {
     };
 
     const handleYelpReviewClick = () => {
-        const yelpReviewURL = "https://www.google.com/search?q=golden+1+thai+massgae&oq=golden+&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgoIARAuGLEDGIAEMhAIAhAuGMcBGLEDGNEDGIAEMgYIAxBFGDkyDQgEEAAYgwEYsQMYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg0NjE1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x8640c567e280bb99:0x71d92342b39858e1,1,,,,";
+        const yelpReviewURL = "https://www.yelp.com/writeareview/biz/XjC47LaW6vlKTffOrgL9DA?review_origin=review-feed-war-widget";
         window.open(yelpReviewURL, '_blank');
     }
 
@@ -103,7 +103,7 @@ function Home() {
                                 style={{ border: 0 }} // Use an object for inline styles
                             ></iframe>
 
-                            <p>1834 Wirt Rd, Houston, TX 77055<br />Contact: 832-374-3319</p>
+                            <p>1834 Wirt Rd, Houston, TX 77055<br />Contact: 832-374-6864</p>
                         </div>
 
                     </div>
@@ -123,27 +123,27 @@ function Home() {
                             <tr>
                                 <td>Monday</td>
                                 <td>9:00 AM</td>
-                                <td>10:00 PM</td>
+                                <td>9:00 PM</td>
                             </tr>
                             <tr>
                                 <td>Tuesday</td>
                                 <td>9:00 AM</td>
-                                <td>10:00 PM</td>
+                                <td>9:00 PM</td>
                             </tr>
                             <tr>
                                 <td>Wednesday</td>
                                 <td>9:00 AM</td>
-                                <td>10:00 PM</td>
+                                <td>9:00 PM</td>
                             </tr>
                             <tr>
                                 <td>Thursday</td>
                                 <td>9:00 AM</td>
-                                <td>10:00 PM</td>
+                                <td>9:00 PM</td>
                             </tr>
                             <tr>
                                 <td>Friday</td>
                                 <td>9:00 AM</td>
-                                <td>10:00 PM</td>
+                                <td>9:00 PM</td>
                             </tr>
                         </tbody>
                     </table>

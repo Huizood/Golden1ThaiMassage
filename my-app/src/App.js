@@ -31,7 +31,7 @@ function App() {
         </div>
         <div className="row">
           <div className="col-s">
-            <h6>832-374-3319</h6>
+            <h6>832-374-6864</h6>
           </div>
         </div>
         <div className="row">
@@ -129,7 +129,7 @@ function App() {
           style={{ border: 0 }} // Use an object for inline styles
         ></iframe>
         {/* The Contact Information */}
-        <p>Contact us at 832-374-3319 or visit us at 1834 Wirt Rd, Houston, TX 77055.</p>
+        <p>Contact us at 832-374-6864 or visit us at 1834 Wirt Rd, Houston, TX 77055.</p>
       </div>
     </div>
   );
