@@ -121,7 +121,7 @@ function App() {
             <label>Appointment Message</label>
             <textarea
               name="message"
-              placeholder="Describe your needs or preferred therapist, duration, etc."
+              placeholder="Describe your needs or preferred therapist, duration, number of guest etc."
               rows="4"
             ></textarea>
           </div>
