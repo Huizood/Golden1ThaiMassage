@@ -17,7 +17,7 @@ const menuItems = [
     description: 'It uses pulling up and stretching techniques to help relieve tension and muscle soreness',
     image: trad_pic,
     time: [30,60,120],
-    price: [50,80,120],
+    price: [50,80,160],
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const menuItems = [
     description: 'It uses pulling up and stretching techniques to help relieve tension and muscle soreness',
     image: thai_comb,
     time: [30,60,120],
-    price: [50,80,120],
+    price: [50,80,160],
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const menuItems = [
     description: 'It involves long, kneading strokes combined with rhythmic tapping strokes and movement of the joints.',
     image: swedish,
     time: [30,60,120],
-    price: [50,80,120],
+    price: [50,80,160],
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const menuItems = [
     description: 'Deep Tissue massage therapy is similar to Swedish massage therapy in that it focuses on the deepest layers of muscle tissue, tendons, and fascia.',
     image: deep,
     time: [30,60,120],
-    price: [50,80,120],
+    price: [50,80,160],
   },
   {
     id: 6,
