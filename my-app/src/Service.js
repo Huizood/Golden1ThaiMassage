@@ -73,7 +73,7 @@ const menuItems = [
     description: 'Type of Swedish massage that uses essential oils. Its main focus is relaxation and mindfulness',
     image: thai_comb,
     time: [60,120],
-    price: [95,135],
+    price: [100,140],
    
   },
   {
